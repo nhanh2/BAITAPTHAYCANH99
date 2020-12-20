@@ -28,7 +28,7 @@ function Snopwatch() {
 function Timmer() {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Timmer</Text>
+      <Text>Timmer </Text>
     </View>
   );
 }
@@ -36,9 +36,10 @@ function Timmer() {
 const Tab = createBottomTabNavigator();
 
 export default function App() {
+  
   return (
-    <NavigationContainer>
-      <Tab.Navigator>
+    <NavigationContainer >
+      <Tab.Navigator >
         <Tab.Screen name="Dock" component={Docks} />
         <Tab.Screen name="Alarm" component={Alarm} />
         <Tab.Screen name="Snopwatch" component={Snopwatch} />
